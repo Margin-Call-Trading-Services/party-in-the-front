@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="login.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="email-input">Email</label>
+                <input type="email" id="email-input" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+                <label for="password-input">Password</label>
+                <input type="password" id="password-input" placeholder="Enter password" required>
+            </div>
+            <button type="submit">Log In</button>
+            <!-- Modal dialog markup -->
+            <div id="error-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="error-message">Invalid email or password. Please try again.</p>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
